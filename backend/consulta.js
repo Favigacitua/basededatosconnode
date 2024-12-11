@@ -26,7 +26,6 @@ export const postPost = async (titulo,url,descripcion) => {
     catch(error){
         console.error("Error al agregar post", error.message);
     }
-
 };
 
 

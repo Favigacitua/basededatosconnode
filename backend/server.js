@@ -24,9 +24,7 @@ app.post("/posts", async (req,res)=>{
     await postPost(titulo,url,descripcion,likes)
     res.send("agregado con exito")
 });
-
-
-   
+ 
 
 
 app.delete('/posts/:id', async (req, res)=> {

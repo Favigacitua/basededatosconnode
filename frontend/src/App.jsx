@@ -29,7 +29,7 @@ function App() {
     
   };
 
-  // este método se utilizará en el siguiente desafío
+
   const like = async (id) => {
     await axios.put(urlBaseServer + `/posts/like/${id}`);
     getPosts();
