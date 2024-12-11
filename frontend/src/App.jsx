@@ -17,10 +17,14 @@ function App() {
   };
 
   const agregarPost = async () => {
-    const post = { titulo, img:imgSrc, descripcion };
+    const post = { titulo, url:imgSrc, descripcion };
 
     console.log('Datos enviados:', post)
-    await axios.post(urlBaseServer + "/posts", post);
+    await axios.post(urlBaseServer + "/posts", post, {
+      headers: {
+        "Content-Type": "application/json"
+    }
+  })
     getPosts();
     
   };

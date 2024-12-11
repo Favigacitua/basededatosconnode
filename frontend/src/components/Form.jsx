@@ -31,5 +31,4 @@ function Form({ setTitulo, setImgSRC, setDescripcion, agregarPost }) {
     </div>
   );
 }
-
 export default Form;
