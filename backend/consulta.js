@@ -17,7 +17,7 @@ export const getPost = async()=> {
 }
 
 
-const postPost = async (titulo,url,descripcion) => {
+export const postPost = async (titulo,url,descripcion) => {
     try{
         const consulta = "INSERT INTO posts (titulo, img, descripcion, likes) values ( $1,$2,$3,$4)";
         const values = [titulo,url,descripcion,0];
